@@ -4,9 +4,9 @@ const nextConfig: NextConfig = {
   /* config options here */
 };
 module.exports = {
-  output: 'standalone', // or 'export' for static sites
+  output: 'standalone',
   images: {
-    unoptimized: true // Required for Netlify
+    unoptimized: true
   }
 }
 
