@@ -18,8 +18,7 @@ const AuthContext = createContext<AuthContextType>({} as AuthContextType);
 export function AuthProvider({ children }: { children: ReactNode }) {
   const [user, setUser] = useState<User>(null);
 
-  const login = (email: string, password: string) => {
-    // Add real authentication logic
+  const login = (email: string) => { // Remove password parameter
     setUser({ email, purchasedPlans: [1, 2] });
   };
 
