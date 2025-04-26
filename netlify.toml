@@ -1,6 +1,8 @@
 [build]
   command = "npm run build"
-  publish = "out"
-  
+  publish = ".next"
+
 [[plugins]]
   package = "@netlify/plugin-nextjs"
+  [plugins.inputs]
+    enableImageOptimizer = false # Disable if using Next.js image optimization
